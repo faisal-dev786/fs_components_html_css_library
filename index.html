@@ -34,7 +34,10 @@
             filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F492F0", endColorstr="#A18DCE", GradientType=1);
         }
 
-        h1,h2,h3,p {
+        h1,
+        h2,
+        h3,
+        p {
             font-family: 'Philosopher', sans-serif;
         }
 
@@ -57,7 +60,7 @@
 
         .box_main {
             border: 5px solid #7d1489a3;
-            height: 80vh;
+            height: 100vh;
             margin-top: 50px;
             margin-bottom: 50px;
             padding: 10px;
@@ -65,7 +68,7 @@
 
         /* Style the buttons inside the tab */
         button {
-            background-color:   #905E96;
+            background-color: #905E96;
             color: white;
             letter-spacing: 1.5px;
             float: left;
@@ -90,7 +93,10 @@
             color: white;
         }
 
-        /* Create an active/current tablink class */
+
+        .displayTabs {
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -100,12 +106,34 @@
     <div class="wrapper">
         <div class="box_main">
 
-            <div class="tab">
-                <h2>Client Reviews</h2>
-                <a href="./shadow_cards.html"><h3><button class="button">shadow_cards</button></h3></a>
+            <div class="displayTabs">
 
-            </div> 
+                
+                <div>
+                    <!-- Client Reviews -->
+                    <div class="tab">
+                        <h2>Client Reviews</h2>
+                        <a href="./shadow_cards.html">
+                            <h3><button class="button">Shadow_Cards</button></h3>
+                        </a>
+                    </div>
+                    <!-- Client Reviews End -->
+                </div>
 
+                <div>
+                    <!-- Subscribe Us -->
+                    <div class="tab">
+                        <h2>Subscribe Us</h2>
+                        <a href="./Subscribe_Us.html">
+                            <h3><button class="button">Subscribe_Us</button></h3>
+                        </a>
+                    </div>
+                    <!-- Subscribe Us End -->
+                </div>
+
+
+
+            </div>
         </div>
     </div>
 
