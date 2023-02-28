@@ -102,9 +102,15 @@
         .displayTabs {
             display: inline-block;
         }
-        .tab h2{
+
+        .tab h2 {
             font-size: 22px;
         }
+        .nested_Tabs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
 
         @media all and (min-width:568px) {
 
@@ -148,8 +154,9 @@
                 margin-bottom: 40px;
                 text-transform: capitalize;
                 border-radius: 10px;
-                max-width: 560px;
-                padding: 15px;
+                max-width: 620px;
+                padding: 27px;
+                font-size: 40px;
             }
 
             .box_main {
@@ -191,6 +198,17 @@
             .displayTabs {
                 display: inline-block;
             }
+
+            .nested_Tabs {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 40px;
+            }
+
+            .tab h2 {
+                text-align: center;
+                font-size: 30px;
+            }
         }
     </style>
 </head>
@@ -203,30 +221,49 @@
 
             <div class="displayTabs">
 
+                <!-- Client Reviews -->
+                <div class="tab">
+                    <h2>Client Reviews</h2>
 
-                <div>
-                    <!-- Client Reviews -->
-                    <div class="tab">
-                        <h2>Client Reviews</h2>
-                        <a href="./shadow_cards.html">
-                            <h3><button class="button">Shadow_Cards</button></h3>
-                        </a>
+                    <div class="nested_Tabs">
+                        <div>
+                            <a href="./shadow_cards.html">
+                                <h3><button class="button">Shadow_Cards</button></h3>
+                            </a>
+
+                        </div>
+
+                        <div>
+                            <a href="./shadow_cards.html">
+                                <h3><button class="button">Shadow_Cards</button></h3>
+                            </a>
+                        </div>
+
                     </div>
-                    <!-- Client Reviews End -->
                 </div>
+                <!-- Client Reviews End -->
 
                 <div>
                     <!-- Subscribe Us -->
                     <div class="tab">
                         <h2>Subscribe Us</h2>
-                        <a href="./Subscribe_Us.html">
-                            <h3><button class="button">Subscribe_Us</button></h3>
-                        </a>
+
+                        <div class="nested_Tabs">
+
+                            <div>
+                                <a href="./Subscribe_Us.html">
+                                    <h3><button class="button">Subscribe_Us</button></h3>
+                                </a>
+                            </div>
+
+
+
+                        </div>
                     </div>
                     <!-- Subscribe Us End -->
 
 
-                    
+
                 </div>
 
 
