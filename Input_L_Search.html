@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Input_L_Search</title>
+    <style>
+        .wrappper {
+            max-width: 1280px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .search-box {
+            width: 100%;
+            position: relative;
+            display: flex;
+
+        }
+
+        .search-box input {
+            border-left: none;
+            height: 13px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 0px 5px 5px 0px;
+
+            outline: none;
+            font-size: 13px;
+
+            background: none;
+        }
+
+        .search-button {
+            text-align: center;
+            height: 35px;
+            width: 40px;
+            outline: none;
+            cursor: pointer;
+            border: 1px solid grey;
+            border-radius: 5px 0px 0px 5px;
+            border-right: none;
+            background: none;
+            font-size: 18px;
+            padding-left: 15px;
+        }
+
+
+        .fa-search {
+            color: grey;
+
+        }
+
+
+        @media all and (min-width:568px) {
+
+            .wrappper {
+                max-width: 1280px;
+                width: 80%;
+                margin: auto;
+            }
+
+            .search-box {
+                width: 100%;
+                position: relative;
+                display: flex;
+
+            }
+
+            .search-box input {
+                padding-left: 23px;
+                height: 17px;
+                border-left: none;
+            }
+
+            .search-input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid grey;
+                border-radius: 0px 5px 5px 0px;
+
+                outline: none;
+                font-size: 18px;
+
+                background: none;
+            }
+
+            .search-button {
+                text-align: center;
+                height: 40px;
+                width: 40px;
+                outline: none;
+                cursor: pointer;
+                border: 1px solid grey;
+                border-radius: 5px 0px 0px 5px;
+                border-right: none;
+                background: none;
+                font-size: 20px;
+                padding-left: 15px;
+            }
+
+            .container {
+                width: 400px;
+            }
+
+            .fa-search {
+                color: grey;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrappper">
+
+        <div class="container">
+            <div class="search-box">
+                <a href=""><button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button></a>
+
+                <input type="text" class="search-input" placeholder="Start searching">
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
