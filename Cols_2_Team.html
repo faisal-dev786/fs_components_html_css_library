@@ -32,7 +32,7 @@
             border-radius: 5px;
         }
 
-      
+
         .advisors {
             font-family: 'Agency Gothic CT';
             font-style: normal;
@@ -44,6 +44,7 @@
             color: #1D1B1B;
             margin-bottom: 30px;
         }
+
         .team {
             font-family: 'Agency Gothic CT';
             font-style: normal;
@@ -54,7 +55,16 @@
             letter-spacing: 0.1em;
             color: #1D1B1B;
             margin-bottom: 30px;
+            padding-top: 40px;
         }
+
+        .card_main2 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            padding: 20px 0px;
+        }
+
         /* Cols_2_Team */
 
         @media all and (min-width:560px) {
@@ -78,17 +88,20 @@
                 padding-top: 40px;
                 border-radius: 5px;
             }
+
             .team {
-            font-family: 'Agency Gothic CT';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 50px;
-            line-height: 130%;
-            text-align: center;
-            letter-spacing: 0.1em;
-            color: #1D1B1B;
-            margin-bottom: 30px;
-        }
+                font-family: 'Agency Gothic CT';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 50px;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: 0.1em;
+                color: #1D1B1B;
+                margin-bottom: 30px;
+                padding-top: 40px;
+            }
+
             .card_main2 {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -96,6 +109,7 @@
                 justify-content: center;
                 max-width: 600px;
                 margin: auto;
+                padding: 20px 0px;
             }
 
             /* Cols_2_Team End */
@@ -109,23 +123,23 @@
 
         <div class="wrapper">
             <!-- Cols_2_Team -->
-           
-                <h1 class="team">Our Team</h1>
-                <div class="card_main2">
-                    <div class="card_2_cols">
-                        <img src="https://i.ibb.co/mHQ23dF/Ellipse-1-5.png" alt="">
-                        <p class="card_p1">Emily Adams</p>
-                        <p class="card_p2">Lab Technician, Chemistry</p>
-                        <a class="card_a" href="#">linkedin.com</a>
-                    </div>
 
-                    <div class="card_2_cols">
-                        <img src="https://i.ibb.co/233Zw5f/Ellipse-1-4.png" alt="">
-                        <p class="card_p1">Rachel Murphy</p>
-                        <p class="card_p2">Biomedical R&D Scientis</p>
-                        <a class="card_a" href="#">linkedin.com</a>
-                    </div>
-                
+            <h1 class="team">Our Team</h1>
+            <div class="card_main2">
+                <div class="card_2_cols">
+                    <img src="https://i.ibb.co/mHQ23dF/Ellipse-1-5.png" alt="">
+                    <p class="card_p1">Emily Adams</p>
+                    <p class="card_p2">Lab Technician, Chemistry</p>
+                    <a class="card_a" href="#">linkedin.com</a>
+                </div>
+
+                <div class="card_2_cols">
+                    <img src="https://i.ibb.co/233Zw5f/Ellipse-1-4.png" alt="">
+                    <p class="card_p1">Rachel Murphy</p>
+                    <p class="card_p2">Biomedical R&D Scientis</p>
+                    <a class="card_a" href="#">linkedin.com</a>
+                </div>
+
             </div>
             <!-- Cols_2_Team End -->
 
