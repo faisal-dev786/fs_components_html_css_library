@@ -10,7 +10,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <title>Input_R_Search</title>
+    <title>User_Input</title>
     <style>
         .wrappper {
             max-width: 1280px;
@@ -18,7 +18,7 @@
             margin: auto;
         }
 
-        /* Input_R_Search */
+        /* User_Input */
         .search-box {
             width: 100%;
             position: relative;
@@ -27,7 +27,7 @@
         }
 
         .search-box input {
-
+            border-left: none;
             height: 13px;
         }
 
@@ -35,8 +35,8 @@
             width: 100%;
             padding: 10px;
             border: 1px solid grey;
-            border-radius: 5px 0 0 5px;
-            border-right: none;
+            border-radius: 0px 5px 5px 0px;
+
             outline: none;
             font-size: 13px;
 
@@ -50,11 +50,11 @@
             outline: none;
             cursor: pointer;
             border: 1px solid grey;
-            border-radius: 0 5px 5px 0;
-            border-left: none;
+            border-radius: 5px 0px 0px 5px;
+            border-right: none;
             background: none;
             font-size: 18px;
-            padding-right: 15px;
+            padding-left: 15px;
         }
 
 
@@ -63,7 +63,7 @@
 
         }
 
-        /* Input_R_Search End */
+        /* User_Input End */
 
 
         @media all and (min-width:568px) {
@@ -74,7 +74,8 @@
                 margin: auto;
             }
 
-            /* Input_R_Search mq */
+            /* User_Input */
+
             .search-box {
                 width: 100%;
                 position: relative;
@@ -85,14 +86,15 @@
             .search-box input {
                 padding-left: 23px;
                 height: 17px;
+                border-left: none;
             }
 
             .search-input {
                 width: 100%;
                 padding: 10px;
                 border: 1px solid grey;
-                border-radius: 5px 0 0 5px;
-                border-right: none;
+                border-radius: 0px 5px 5px 0px;
+
                 outline: none;
                 font-size: 18px;
 
@@ -106,11 +108,11 @@
                 outline: none;
                 cursor: pointer;
                 border: 1px solid grey;
-                border-radius: 0 5px 5px 0;
-                border-left: none;
+                border-radius: 5px 0px 0px 5px;
+                border-right: none;
                 background: none;
                 font-size: 20px;
-                padding-right: 45px;
+                padding-left: 15px;
             }
 
             .container {
@@ -122,24 +124,24 @@
 
             }
 
-            /* Input_R_Search mq End */
+            /* User_Input mq End */
         }
     </style>
 </head>
 
 <body>
     <div class="wrappper">
-        <!-- Input_R_Search -->
+        <!-- User_Input -->
         <div class="container">
             <div class="search-box">
-                <input type="text" class="search-input" placeholder="Start searching">
                 <a href=""><button class="search-button">
-                        <i class="fas fa-search"></i>
+                        <i class="fa-solid fa-user"></i>
                     </button></a>
 
+                <input type="text" class="search-input" placeholder="Enter Name">
             </div>
         </div>
-        <!-- Input_R_Search End-->
+        <!-- User_Input End -->
 
     </div>
 </body>
